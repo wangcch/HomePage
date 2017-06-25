@@ -1,0 +1,374 @@
+@font-face{
+	font-family: "Eras bold ITC";
+	src: url('../font/ERASBD.TTF');
+}
+*{margin: 0; padding: 0; font-family: "microsoft yahei";}
+html,body{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+}
+#box{
+	width: 80%;
+	height: 80%;
+	border-radius: 7px;
+	box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+	background-color: rgba(255,255,255,0.7);
+	z-index: 2;
+	padding: 5px;
+	position: relative;
+}
+#box:hover{
+	box-shadow: 0 15px 50px rgba(0,0,0,0.17);
+}
+#box #particle{
+	width: 99%;
+	height: 99%;
+	position: absolute;
+	z-index: -3;
+	margin:auto;
+}
+#box #title{
+	margin-top: -37px;
+	font-family: "Eras bold ITC";
+	font-size: 1.8em;
+}
+#box #title a{
+	font-family: "Eras bold ITC";
+	text-decoration: none;
+	color: rgba(0,0,0,1);
+}
+
+#box #language{
+	position: absolute;
+	right: 0px;
+	margin: 8px 10px;
+	z-index: 5;
+}
+
+#language .lang{
+	display: inline-block;
+	padding: 2px 5px;
+	border-radius: 5px;
+	font-size: 0.8em;
+	text-decoration: none;
+	color: rgba(0,0,0,1);
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+#language .hover:hover{
+	color: #007aff;
+}
+
+#language .selected{
+	background-color: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,1);
+	cursor: default;
+}
+
+.swiper-container{
+	width: 100%;
+	height: 100%;
+}
+.swiper-container h1{
+	text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+}
+.ty_center{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+	text-align: center;
+}
+
+.img img{
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+.img img:hover{
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.img .ty_name{
+	font-size: 2em;
+	text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+
+}
+.img p{
+	margin-top: 10px;
+}
+.img a{
+	font-size: 1em;
+	text-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	text-decoration: none;
+	color: rgba(0,0,0,0.7);
+}
+.img a:hover{
+	text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+	color: rgba(0,0,0,0.9);
+}
+.ty_code{
+	padding: 10px;
+	margin-top: 35px;
+	text-align: center;
+}
+.ty_code p{
+	font-size: 0.8em;
+	display: inline;
+	padding: 2px 10px;
+	margin: 5px 0;
+	background-color: rgba(215,215,215,0.6);
+	border-radius: 2px;
+	font-family: "Consolas";
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.project article{
+	margin-top: 10px;
+}
+.project a{
+	text-decoration: none;
+}
+.project .git{
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+}
+.project .git a{
+	color: rgba(0,0,0,1);
+}
+.project .git a:hover{
+	color: #007aff;
+}
+.project .pj-level .item{
+	display: inline-block;
+	width: 380px;
+	text-align: left;
+	margin: 5px auto;
+	padding: 5px;
+}
+.project .pj-level .item h2 a{
+	color: rgba(0,0,0,0.6);
+	text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+	font-size: 0.9em;
+}
+.project .pj-level .item h2 a:hover{
+	color: #007aff;
+}
+.project .pj-level .item p{
+	font-size: 0.8em;
+}
+.project .pj-level .item span{
+	cursor: default;
+	font-size: 0.7em;
+	color: #fff;
+	text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.3);
+	padding: 0 5px;
+	margin: auto 3px;
+	border-radius: 3px
+}
+
+
+.profession article{
+	margin-top: 10px;
+	position: relative;
+}
+.profession p{
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+}
+.profession .tag-panel{
+	margin: 5px auto;
+}
+.profession .tag-panel .tag{
+	display: inline-block;
+	padding: 2px 15px;
+	border-radius: 3px;
+	text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+
+}
+.profession .tag-panel .tag:hover{
+	cursor: default;
+	color: #007aff;
+	box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+	opacity: 0.7;
+}
+.profession .tag-panel .familiar{
+	background-color: rgba(0,0,0,0.35);
+}
+.profession .tag-panel .expert{
+	background-color: rgba(0,0,0,0.22);
+}
+.profession .tag-panel .know{
+	background-color: rgba(0,0,0,0.15);
+}
+
+
+
+.campus table{
+	margin-top:20px;
+	text-align: left;
+}
+.campus table td{
+	padding: 5px;
+}
+.campus table td span{
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+
+
+.education h4,p{
+	margin-top: 10px;
+}
+.education a{
+	color: rgba(0,0,0,1);
+}
+.education a:hover{
+	color: #007aff;
+}
+.education em{
+	text-shadow: 2px 2px 6px rgba(0,0,0,0.2); 
+}
+
+
+.more h3,p{
+	margin-top: 10px;
+}
+.more a{
+	text-decoration: none;
+}
+.more h3 a{
+	color: rgba(0,0,0,0.7);
+}
+.more h3 a:hover{
+	color: #007aff;
+}
+.more p a{
+	text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+	color: rgba(0,0,0,0.6);
+}
+.more p a:hover{
+	text-shadow: 2px 2px 5px rgba(0,0,0,0);
+	color: #007aff;
+}
+.more .tyfont{
+	font-family: "Eras bold ITC";
+}
+.more .contact-panel{
+	position: absolute;
+	bottom: 60px;
+	left: 0;
+	right: 0;
+}
+.more .contact-panel .btn{
+	width: 36px;
+	height: 36px;
+	border-radius: 18px;
+	margin: auto 10px;
+	background-color: rgba(255,255,255,1);
+	box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+	display: inline-block;
+    border-bottom: none;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: 4px 4px ;
+    transition: border-radius 0.8s , background-color 0.8s;
+}
+.more .contact-panel .btn:hover{
+	border-radius: 2px;
+	background-color: rgba(0,0,0,0.15);
+}
+.more .contact-panel .github{
+	background-image: url(../img/github.png);
+}
+.more .contact-panel .weibo{
+	background-image: url(../img/weibo.png);
+}
+
+
+
+
+footer{
+	z-index: 5;
+	width: 80%;
+}
+footer .cnzz{
+	float: left;
+	margin-top:6px;"
+}
+footer p{
+	font-family: "Eras bold ITC";
+	font-size: 0.7em;
+	text-align: right;
+}
+@media screen and (max-width: 1020px){
+	.campus table td{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 768px){
+	html,body{
+		overflow-x: hidden; overflow-y: hidden;
+	}
+	#box{
+		width: 95%;
+		height: 95%;
+	}
+	#box #particle{
+		/*display: none;*/
+	}
+	#box #title{
+		position: absolute;
+		z-index: 5;
+		margin-top: 2px;
+	}
+	.project article{
+		margin-top: 5px;
+	}
+	.project .git{
+		bottom: 5px;
+	}
+	.project .pj-level .item{
+		width: 80%;
+		margin: 3px auto;
+		padding: 2px;
+	}
+	.profession p{
+		bottom: 5px;
+	}
+	.profession .tag-panel .ttt{
+		display: block;
+		margin: 5px auto;
+		width: 80px;
+	}
+	.campus>table ,.education ,.more{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.campus table{
+		text-align: center;
+		margin-top: 20px;
+	}
+	footer{
+		display: none;
+	}
+}

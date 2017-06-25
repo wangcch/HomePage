@@ -1,0 +1,117 @@
+.ty_center_h{
+	width: 100%;
+	height: 93%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+
+.typed-js{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: -10px;
+}
+.typed-cursor{
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+
+
+.nav{
+	height: 42px;
+	line-height: 42px;
+	padding: 5px;
+}
+.nav .menu{
+	float: left;
+}
+.nav .menu a{
+	margin:auto 5px;
+	text-decoration: none;
+	color: rgba(0,0,0,1);
+	text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+.nav .menu a:hover{
+	color: #007aff;
+}
+
+.nav .contact{
+	float: right;
+	margin: 5px auto;
+}
+.nav .contact a{
+	margin: auto 5px;
+}
+.nav .contact .btn{
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	background-color: rgba(255,255,255,1);
+	box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+	display: inline-block;
+    border-bottom: none;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: 4px 4px ;
+    transition: border-radius 0.8s , background-color 0.8s;
+}
+.nav .contact .btn:hover{
+	border-radius: 2px;
+	background-color: rgba(0,0,0,0.15);
+}
+.nav .contact .mail{
+	background-image: url(../img/mail.png);
+}
+.nav .contact .github{
+	background-image: url(../img/github.png);
+}
+.nav .contact .weibo{
+	background-image: url(../img/weibo.png);
+}
+
+@media screen and (max-width: 768px){
+	.ty_center_h{
+		height: 91%;
+	}
+}

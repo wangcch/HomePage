@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title>THEYEAR</title>
+	<style type="text/css">
+		.ty-logo{
+			width: 200px;
+			height: 112.5px;
+			position: relative;
+			margin: 200px auto;
+		}
+		.ty-logo img{
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			max-height: 100%;
+			position: absolute;
+		}
+		.ty-logo #ty1{
+			animation: ty1 0.8s ease-in-out;
+		}
+		@keyframes ty1{
+			0%{margin-left: -400px; opacity: 0;}
+			50%{opacity: 1}
+			100%{margin-left: 0;}
+		}
+		.ty-logo #ty2{
+			animation: ty2 0.8s ease-in-out;
+		}
+		@keyframes ty2{
+			0%{margin-top: -400px; margin-left: 232px;opacity: 0;}
+			50%{opacity: 1}
+			100%{margin-top: 0; margin-left:0;}
+		}
+		.ty-logo #ty3{
+			animation: ty3 0.8s ease-in-out;
+		}
+		@keyframes ty3{
+			0%{margin-left: -232px; margin-top: 400px; opacity: 0;}
+			50%{opacity: 1}
+			100%{margin-left: 0; margin-top: 0;}
+		}
+	</style>
+</head>
+<body>
+	<div class="ty-logo">
+		<img src="img/ty1.png" id="ty1">
+		<img src="img/ty2.png" id="ty2">
+		<img src="img/ty3.png" id="ty3">
+	</div>
+</body>
+</html>
