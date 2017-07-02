@@ -1,0 +1,103 @@
+@font-face{
+	font-family: "Eras bold ITC";
+	src: url(font/ERASBD.TTF);
+}
+@font-face{
+	font-family: "dengl";
+	src: url(font/DENGL.TTF);
+}
+*{margin: 0;padding: 0;}
+html{
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+}
+.updateBox{
+	background: url(img/browser_bg_wrapper.png) no-repeat left top;
+	width: 484px;
+	height: 613px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -242px;
+	margin-top: -290px;
+}
+.title{
+	font-family: "Eras bold ITC";
+	font-size: 1.6em;
+	margin-left: 20px;
+	margin-top: -22px;
+}
+.updateContent h1{
+	font-family: "dengl";
+	color: #212121;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 63px 0 0 0;
+    text-align: center;
+}
+.updateContent h2{
+	font-family: "dengl";
+	color: #999;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 24px 57px 15px;
+
+}
+.updateContent ul{
+	margin-left: 60px;
+}
+.updateContent li{
+	cursor: pointer;
+	list-style: none;
+	background: url(img/icon_border.png) no-repeat left top;
+    height: 55px;
+    margin: 10px 0;
+    position: relative;
+    text-align: center;
+    width: 360px;
+    *zoom: 1;
+}
+.updateContent li:hover{
+	background-position: 0 -62px;
+}
+.updateContent a{
+	background: url(img/browser_icon.png) no-repeat;
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+}
+.updateContent a p{
+	font-family: "dengl";
+	font-weight: bold;
+	color: #666;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 200px;
+}
+.updateContent .more a p{
+	margin-left: 160px;
+}
+.updateContent .chrome a{
+	background-position: 15px 0;
+}
+.updateContent .firefox a{
+	background-position: 15px -65px;
+}
+.updateContent .ie a{
+	background-position: -308px 0;
+}
+.updateContent .more a{
+	background-position: 500px 0;
+}
+.footer{
+	font-family: "dengl";
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
