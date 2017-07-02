@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>UPDATE|THEYEAR</title>
+	<title>UPDATE | THEYEAR</title>
 	<link rel="icon" href="../favicon.png">
 	<link rel="stylesheet" href="update.css">
-<script src="../ty_home/js/jquery-3.2.1.min.js"></script>
-    <script>
-        $(function(){
-            var myDate = new Date();
-            var year = myDate.getYear()+1900;
-            $("#year").html(year);
-        });
+    <script type="text/javascript">
+        window.onload=function(){
+        	var myDate = new Date();
+        	var yearNum = myDate.getFullYear();
+        	document.getElementById('year').innerHTML = yearNum;
+        }
     </script>
 </head>
 <body>
